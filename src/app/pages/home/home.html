@@ -1,0 +1,42 @@
+<section class="bg-blue-800 text-white py-20 px-4 text-center">
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+      Domine a Teoria da Computação
+    </h1>
+    <p class="text-xl md:text-2xl text-blue-200 mb-8">
+      De Máquinas de Turing a Autômatos: aprenda os fundamentos da ciência da computação de forma visual e interativa.
+    </p>
+    <a href="/turingMachine" routerLink="/turingMachine" class="bg-white text-blue-800 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition shadow-lg inline-block">
+      Começar Agora
+    </a>
+  </div><section class="py-16 px-4 bg-gray-50 rounded-lg shadow-md mt-10">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Tópicos Principais</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <app-card
+        title="Autômatos Finitos"
+        description="Entenda como funcionam os estados, transições e a lógica por trás de sistemas simples."
+        route="/automatos"
+        buttonText="Estudar Autômatos →">
+      </app-card>
+
+      <app-card
+        title="Máquina de Turing"
+        description="O modelo matemático que define o que é computável. A base de todos os computadores."
+        route="/turingMachine"
+        buttonText="Ver Simulação →">
+      </app-card>
+
+      <app-card
+        title="Complexidade"
+        description="Descubra a diferença entre P, NP e por que alguns problemas são impossíveis."
+        route="/about">
+      </app-card>
+
+    </div>
+  </div>
+</section>
+
+
