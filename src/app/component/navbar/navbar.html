@@ -1,6 +1,6 @@
 <nav class="flex flex-wrap items-center p-4 shadow-md bg-blue-700 text-white w-full z-20 top-0 start-0 sticky">
 
-  <div class="flex items-center justify-between w-full md:w-auto md:basis-1/3 md:justify-start">
+  <div class="flex items-center justify-between w-full md:w-auto md:basis-1/4 md:justify-start">
 
       <img src="/logo.png" alt="TeoC-EDU Logo" class="h-20 w-20 rounded-full object-cover">
       <button (click)="toggleMenu()" type="button" class="md:hidden inline-flex items-center gap-2 px-3 py-2 border border-white/30 rounded text-sm font-semibold hover:bg-white/10 transition">
@@ -11,14 +11,16 @@
       </button>
   </div>
 
-  <ul [class.hidden]="!isMenuOpen()" class="w-full md:flex md:w-auto md:basis-1/3 flex-col md:flex-row items-center justify-center gap-6 py-4 md:py-0 text-lg font-medium">
+  <ul [class.hidden]="!isMenuOpen()" class="w-full md:flex md:w-auto md:basis-2/4 flex-col md:flex-row items-center justify-center gap-6 py-4 md:py-0 text-lg font-medium">
     <li><a href="/home" routerLink="/home" routerLinkActive="font-bold underline" (click)="isMenuOpen.set(false)" class="hover:text-gray-200 transition">Página Inicial</a></li>
+    <li><a href="#" routerLink="/automatos" routerLinkActive="font-bold underline" (click)="isMenuOpen.set(false)" class="hover:text-gray-200 transition">Autômatos Finitos</a></li>
     <li><a href="#" routerLink="/turingMachine" routerLinkActive="font-bold underline" (click)="isMenuOpen.set(false)" class="hover:text-gray-200 transition">Turing Machine</a></li>
+    <li><a href="#" routerLink="/complexidade" routerLinkActive="font-bold underline" (click)="isMenuOpen.set(false)" class="hover:text-gray-200 transition">Complexidade</a></li>
     <li><a href="#" routerLink="/about" routerLinkActive="font-bold underline" (click)="isMenuOpen.set(false)" class="hover:text-gray-200 transition">Sobre</a></li>
     <li><a href="#" routerLink="/contact" routerLinkActive="font-bold underline" (click)="isMenuOpen.set(false)" class="hover:text-gray-200 transition">Contato</a></li>
   </ul>
 
-  <div [class.hidden]="!isMenuOpen()" class="w-full md:flex md:w-auto md:basis-1/3 flex-col md:flex-row items-center md:justify-end gap-4 pb-4 md:pb-0">
+  <div [class.hidden]="!isMenuOpen()" class="w-full md:flex md:w-auto md:basis-1/4 flex-col md:flex-row items-center md:justify-end gap-4 pb-4 md:pb-0">
     <button class="w-full md:w-auto px-5 py-2 bg-white text-blue-700 font-bold rounded hover:bg-gray-100 transition shadow-sm">
       Login
     </button>
